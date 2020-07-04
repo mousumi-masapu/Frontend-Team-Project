@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleTaxi.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="mynavbar " id="mynavbar">
+        <a href="landing-page.html" class="imglogo"><img src="images/Taxi.jpg" alt="logo"></a>
+        <a href="landing-page.html" style="padding-left: 20vw;">Circus Restaurant</a>
+        <div style="float: right;" class="topnav">
+            <a href="landing-page.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="book-table.html">Book Table</a>
+            <a href="circus-acts.html">Circus Act</a>
+            <a href="book-taxi.html">Book Taxi</a>
+            <a href="login.html">Login</a>
+            
+        </div>
+    </nav>
+
+    <main>
+        <centre>
+            <form>
+                <h1 class="bktaxi">Book a Taxi</h1>
+                <form>
+                    
+                    <label>First Name</label>
+                    <input type="text" id="fname" name="fname" min="0" max="50"><br>
+                    <label>Last Name</label>
+                    <input type="text" id="lname" name="lname" min="0" max="50"><br>
+                    
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" min="0" max="50"><br>
+                    <label>Address</label>
+                    <input type="text" id="address" name="address" min="0" max="50"><br>
+                    <label>City</label>
+                    <input type="text" id="city" name="city" min="0" max="50"><br>
+                    <label>Postcode</label>
+                    <input type="text" id="postcode" name="postcode" min="0" max="50"><br>
+                    <label>Country</label>
+                    <input type="text" id="country" name="country" min="0" max="50"><br>
+                    <label>Telephone</label>
+                    <input type="text" id="tel" name="tel" min="0" max="50"><br>
+                    
+                    
+                    <label class="container">Pick me up at the Restaurant.
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    </br>
+                    <div id="confirm">
+                        <div class="message">Taxi is on the way!</div>
+                        <button class="yes">OK</button>
+                    </div>
+                    <input type="button" onclick="postMessage()" value="Book">
+
+                </form>
+        </centre>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2020 &dash; TeamOne AB</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
